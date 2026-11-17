@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = ["crates/labu-core", "crates/labu-cli"]
+# Spike adalah kode buangan: tidak ikut workspace maupun CI.
+exclude = ["spikes"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/redpumpkin-ai/labu"

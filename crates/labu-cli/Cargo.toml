@@ -1,0 +1,15 @@
+[package]
+name = "labu-cli"
+description = "CLI labu: test bench reliability untuk agent"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "labu"
+path = "src/main.rs"
+
+[dependencies]
+labu-core = { path = "../labu-core" }
+clap = { version = "4", features = ["derive"] }
